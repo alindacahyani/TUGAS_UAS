@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Website Absensi</title>
+</head>
+<body>
+    <div id="absensi-container">
+        <h1>Absensi Siswa XI PPLG 6</h1>
+        <form id="absensi-form">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" placeholder="Masukkan Nama" required>
+            <label for="nama">Kelas:</label>
+            <input type="text" id="kelas" placeholder="Masukkan kelas" required>          
+
+            <label for="status">Status Kehadiran:</label>
+            <select id="status" required>
+                <option value="hadir">Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Leave">Leave</option>
+                <option value="Late">Late</option>
+            </select>
+
+            <button type="button" onclick="absen()">Absen</button>
+        </form>
+
+        <div id="daftar-hadir">
+            <h2>Daftar Hadir</h2>
+            <ul id="hadir-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
